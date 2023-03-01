@@ -8,7 +8,7 @@ namespace MastonetMonke.MastNet_CI
     public class MastEntry : IComputerModEntry
     {
         // This is the mod name that is going to show up as a selectable mod
-        public string EntryName => "MyMod";
+        public string EntryName => "MastonetMonke";
 
         // This is the first view that is going to be shown if the user select you mod
         // The Computer Interface mod will instantiate your view 

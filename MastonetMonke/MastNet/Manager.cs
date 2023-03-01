@@ -1,6 +1,7 @@
 ﻿using Mastonet;
 using System.IO;
-using System.Reflection;
+using BepInEx.Configuration;
+using BepInEx;
 
 namespace MastonetMonke.MastNet
 {
@@ -10,24 +11,11 @@ namespace MastonetMonke.MastNet
 
         public Manager()
         {
-            var instance = "https://tech.lgbt/";
-            var accessToken = GetToken();
-            var authClient = new AuthenticationClient(instance);
-            PublicMastodonClient = new MastodonClient(instance, accessToken);
-        }
-
-        public string GetToken()
-        {
-            Stream initialStream = Assembly.GetExecutingAssembly().GetManifestResourceStream("MastonetMonke.MastNet.Token.txt");
-            StreamReader streamReader = new StreamReader(initialStream);
-            string result = streamReader.ReadToEnd();
-
-            streamReader.Dispose();
-            streamReader.Close();
-            initialStream.Dispose();
-            initialStream.Close();
-
-            return result;
+            var customFile = new ConfigFile(Path.Combine(Paths.ConfigPath, "MastonetMonke.cfg"), true);
+            var instance = customFile.Bind("Login", "Instance", "https://tech.lgbt", "Mastodon instance to use");
+            var accessToken = customFile.Bind("Login", "Token", "PutYourTokenHere", "Access token to use. Get this from the Development category in your Mastodon settings. Don't share this with anyone, anybody with this token can freely access your application and usually full write access in turn!!!!!");
+            var authClient = new AuthenticationClient(instance.Value);
+            PublicMastodonClient = new MastodonClient(instance.Value, accessToken.Value);
         }
     }
 }

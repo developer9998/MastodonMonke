@@ -53,6 +53,7 @@ namespace MastonetMonke.MastNet_CI
                     return;
                 case EKeyboardKey.Back:
                     ReturnToMainMenu();
+                    _textInputHandler.Text = "";
                     return;
             }
 
