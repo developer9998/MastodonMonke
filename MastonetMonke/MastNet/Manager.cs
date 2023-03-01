@@ -1,7 +1,5 @@
 ﻿using Mastonet;
 using System.IO;
-using System.Reflection;
-using UnityEngine;
 using BepInEx.Configuration;
 using BepInEx;
 
@@ -19,6 +17,5 @@ namespace MastonetMonke.MastNet
             var authClient = new AuthenticationClient(instance.Value);
             PublicMastodonClient = new MastodonClient(instance.Value, accessToken.Value);
         }
-
     }
 }
