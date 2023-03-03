@@ -1,4 +1,5 @@
-﻿using ComputerInterface;
+﻿using BepInEx;
+using ComputerInterface;
 using ComputerInterface.ViewLib;
 using MastodonMonke;
 using System.Collections.Generic;
@@ -30,9 +31,10 @@ namespace MastodonMonke.MastNet_CI
             var str = new StringBuilder();
 
             str.Repeat("=", SCREEN_WIDTH) // Header
-                .BeginCenter();
+                .BeginCenter()
+                .AppendLine();
 
-            str.AppendLine("\n<b>MastonetMonke</b>")
+            str.AppendLine(PluginInfo.Name)
                 .AppendLine("Made by Dev & WowItsKaylie")
                 .EndAlign();
 
@@ -79,6 +81,8 @@ namespace MastodonMonke.MastNet_CI
         public void PostMessage()
         {
             _hasPosted = true;
+
+            if (_textInputHandler.Text.IsNullOrWhiteSpace()) return;
 
             string orgMessage = _textInputHandler.Text.ToLower();
             List<string> orgMessage_Split = orgMessage.Split(' ').ToList();

@@ -1,7 +1,7 @@
 ﻿using System;
 using ComputerInterface.Interfaces;
 
-namespace MastonetMonke.MastNet_CI
+namespace MastodonMonke.MastNet_CI
 {
     public class MastEntry : IComputerModEntry
     {

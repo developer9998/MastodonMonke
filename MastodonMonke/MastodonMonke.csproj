@@ -18,7 +18,7 @@
 			<HintPath>$(PluginsPath)\Extenject\Zenject-usage.dll</HintPath>
 		</Reference>
 		<Reference Include="Mastonet">
-			<HintPath>$(PluginsPath)\MastonetMonke\Mastonet.dll</HintPath>
+			<HintPath>$(PluginsPath)\MastodonMonke\Mastonet.dll</HintPath>
 		</Reference>
 	</ItemGroup>
 
