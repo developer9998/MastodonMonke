@@ -17,7 +17,6 @@ namespace MastonetMonke.MastNet_CI
             _textInputHandler = new UITextInputHandler();
         }
 
-        // This is called when you view is opened
         public override void OnShow(object[] args)
         {
             base.OnShow(args);
@@ -29,13 +28,21 @@ namespace MastonetMonke.MastNet_CI
         {
             var str = new StringBuilder();
 
-            str.AppendLine("MastonetMonke").AppendLines(2); // Header
+            str.Repeat("=", SCREEN_WIDTH) // Header
+                .BeginCenter();
+
+            str.AppendLine("\n<b>MastonetMonke</b>")
+                .AppendLine("Made by Dev & WowItsKaylie")
+                .EndAlign();
+
+            str.Repeat("=", SCREEN_WIDTH)
+                .AppendLines(2);
 
             str.BeginColor("ffffff50") // Beginning text
                 .Append("Text: ")
                 .EndColor();
 
-            str.BeginColor(_hasPosted ? "6CD87Aff" : "ffffff50") // Input
+            str.BeginColor(_hasPosted ? "6CD87Aff" : "ffffffff") // Input
                 .Append(_textInputHandler.Text)
                 .EndColor()
                 .AppendClr("_", "ffffff50");

@@ -1,0 +1,96 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Reference Include="Bepinject">
+			<HintPath>$(PluginsPath)\Bepinject-Auros\Bepinject.dll</HintPath>
+		</Reference>
+		<Reference Include="ComputerInterface">
+			<HintPath>$(PluginsPath)\ComputerInterface\ComputerInterface.dll</HintPath>
+		</Reference>
+		<Reference Include="Zenject">
+			<HintPath>$(PluginsPath)\Extenject\Zenject.dll</HintPath>
+		</Reference>
+		<Reference Include="Zenject-usage">
+			<HintPath>$(PluginsPath)\Extenject\Zenject-usage.dll</HintPath>
+		</Reference>
+		<Reference Include="Mastonet">
+			<HintPath>$(PluginsPath)\MastonetMonke\Mastonet.dll</HintPath>
+		</Reference>
+	</ItemGroup>
+
+	<ItemGroup>
+		<Reference Include="0Harmony">
+			<HintPath>$(BepInExAssemblyPath)\0Harmony.dll</HintPath>
+		</Reference>
+		<Reference Include="Assembly-CSharp">
+			<HintPath>$(GameAssemblyPath)\Assembly-CSharp.dll</HintPath>
+		</Reference>
+		<Reference Include="Assembly-CSharp-firstpass">
+			<HintPath>$(GameAssemblyPath)\Assembly-CSharp-firstpass.dll</HintPath>
+		</Reference>
+		<Reference Include="BakeryRuntimeAssembly">
+			<HintPath>$(GameAssemblyPath)\BakeryRuntimeAssembly.dll</HintPath>
+		</Reference>
+		<Reference Include="BepInEx">
+			<HintPath>$(BepInExAssemblyPath)\BepInEx.dll</HintPath>
+		</Reference>
+		<Reference Include="BepInEx.Harmony">
+			<HintPath>$(BepInExAssemblyPath)\BepInEx.Harmony.dll</HintPath>
+		</Reference>
+		<Reference Include="Cinemachine">
+			<HintPath>$(GameAssemblyPath)\Cinemachine.dll</HintPath>
+		</Reference>
+		<Reference Include="clipper_library">
+			<HintPath>$(GameAssemblyPath)\clipper_library.dll</HintPath>
+		</Reference>
+		<Reference Include="Mono.Security">
+			<HintPath>$(GameAssemblyPath)\Mono.Security.dll</HintPath>
+		</Reference>
+		<Reference Include="Oculus.Platform">
+			<HintPath>$(GameAssemblyPath)\Oculus.Platform.dll</HintPath>
+		</Reference>
+		<Reference Include="Oculus.VR">
+			<HintPath>$(GameAssemblyPath)\Oculus.VR.dll</HintPath>
+		</Reference>
+		<Reference Include="Photon3Unity3D">
+			<HintPath>$(GameAssemblyPath)\Photon3Unity3D.dll</HintPath>
+		</Reference>
+		<Reference Include="PhotonRealtime">
+			<HintPath>$(GameAssemblyPath)\PhotonRealtime.dll</HintPath>
+		</Reference>
+		<Reference Include="PhotonUnityNetworking">
+			<HintPath>$(GameAssemblyPath)\PhotonUnityNetworking.dll</HintPath>
+		</Reference>
+		<Reference Include="PhotonUnityNetworking.Utilities">
+			<HintPath>$(GameAssemblyPath)\PhotonUnityNetworking.Utilities.dll</HintPath>
+		</Reference>
+		<Reference Include="PhotonVoice">
+			<HintPath>$(GameAssemblyPath)\PhotonVoice.dll</HintPath>
+		</Reference>
+		<Reference Include="PhotonVoice.API">
+			<HintPath>$(GameAssemblyPath)\PhotonVoice.API.dll</HintPath>
+		</Reference>
+		<Reference Include="PhotonVoice.PUN">
+			<HintPath>$(GameAssemblyPath)\PhotonVoice.PUN.dll</HintPath>
+		</Reference>
+		<Reference Include="PlayFab">
+			<HintPath>$(GameAssemblyPath)\PlayFab.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.XR.Interaction.Toolkit">
+			<HintPath>$(GameAssemblyPath)\Unity.XR.Interaction.Toolkit.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine">
+			<HintPath>$(GameAssemblyPath)\UnityEngine.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.CoreModule">
+			<HintPath>$(GameAssemblyPath)\UnityEngine.CoreModule.dll</HintPath>
+		</Reference>
+		<Reference Include="Utilla">
+			<HintPath>$(PluginsPath)\Utilla\Utilla.dll</HintPath>
+		</Reference>
+	</ItemGroup>
+</Project>

@@ -5,8 +5,8 @@
     /// </summary>
     internal class PluginInfo
     {
-        public const string GUID = "com.dev9998.gorillatag.mastonetmonke";
-        public const string Name = "MastonetMonke";
+        public const string GUID = "com.dev9998.gorillatag.mastodonmonke";
+        public const string Name = "MastodonMonke";
         public const string Version = "1.0.0";
     }
 }
