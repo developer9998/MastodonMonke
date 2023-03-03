@@ -1,7 +1,7 @@
 ﻿using ComputerInterface.Interfaces;
 using Zenject;
 
-namespace MastonetMonke.MastNet_CI
+namespace MastodonMonke.MastNet_CI
 {
     internal class MainInstaller : Installer
     {

@@ -1,10 +1,11 @@
 ﻿using ComputerInterface;
 using ComputerInterface.ViewLib;
+using MastodonMonke;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace MastonetMonke.MastNet_CI
+namespace MastodonMonke.MastNet_CI
 {
     public class MastView : ComputerView
     {

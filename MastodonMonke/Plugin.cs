@@ -1,9 +1,9 @@
 ﻿using BepInEx;
 using Bepinject;
-using MastonetMonke.MastNet;
-using MastonetMonke.MastNet_CI;
+using MastodonMonke.MastNet;
+using MastodonMonke.MastNet_CI;
 
-namespace MastonetMonke
+namespace MastodonMonke
 {
     [BepInPlugin(PluginInfo.GUID, PluginInfo.Name, PluginInfo.Version)]
     public class Plugin : BaseUnityPlugin
